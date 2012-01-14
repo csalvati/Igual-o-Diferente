@@ -9,17 +9,12 @@
 
 		<div id="content">
 		</div>
-		<div id="jugador2" width="100px" style="border: 1px solid black;" >
-		</div>
+
 		<p>
-			
-			<div id="jugador1" width="100px" style="border: 1px solid red;" >
-				<form action="" method="get" onsubmit="comet.doRequest($('word').value);$('word').value='';return false;">
-					<input type="text" name="word" id="word" value="" />
-					<input type="submit" name="submit" value="Send" />
-				</form>
-			</div>
-			
+			<form action="" method="get" onsubmit="comet.doRequest($('word').value);$('word').value='';return false;">
+				<input type="text" name="word" id="word" value="" />
+				<input type="submit" name="submit" value="Send" />
+			</form>
 		</p>
 
 <script type="text/javascript">
@@ -65,7 +60,6 @@ Comet.prototype = {
   {
 	
     $('content').innerHTML += '<div>' + response['msg'] + '</div>';
-	//$('jugador1').innerHTML += '<div>' + response['msg2'] + '</div>';
 	
   },
 
